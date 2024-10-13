@@ -1,0 +1,36 @@
+I/P:1 2 3 4 5 5 2 5 5
+5
+O/P:YES
+4
+import java.util.*;
+public class Main
+{
+public static void main(String[] args)
+{
+
+            Scanner s=new Scanner(System.in);
+            int n=s.nextInt();
+            int []a=new int[n];
+int k=s.nextInt();
+for(int i=0;i<n;i++)
+a[i]=s.nextInt();
+int f=0,c=0;
+for(int i=0;i<n;i++)
+{
+if(a[i]==k)
+{
+f=1;
+c++;
+}
+}
+if(f==1)
+{
+System.out.println("yes");
+System.out.println(c);
+}
+else
+{
+System.out.println("No");
+}
+}
+}
